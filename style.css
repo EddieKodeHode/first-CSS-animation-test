@@ -1,7 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    border: red solid 1px;
 }
 
 body {
@@ -11,34 +10,42 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    color: rgba(63,255,240,1);
 }
 
 main {
     width: 600px;
     height: 400px;
     background-color: rgba(0,0,10,0.7);
-    border: 2px solid white;
+    border: 2px solid rgba(63,255,240,1);
+    border-radius: 3px;
     display: flex;
 }
 
 .leftBox {
     width: 62%;
+    border-right: 1px solid rgba(63,255,240,1);
 }
 
 .topContainer {
     height: 15%;
+    text-align: center;
+    margin-top: 4px;
+    text-shadow: 0 0 5px rgba(63,255,240,1);
 }
 
 .bottomContainer {
     height: 85%;
     display: flex;
+    margin: 5px;
 }
 
 .containerContent {
-    color: yellow;
     height: 100%;
     width: 50%;
     overflow: auto;
+    padding: 2px;
+    text-shadow: 0 0 3px rgba(63,255,240,0.2);
 }
 
 
@@ -49,6 +56,8 @@ main {
 .name {
     text-align: center;
     height: 8%;
+    text-shadow: 0 0 5px rgba(63,255,240,1);
+    padding: 5px;
 }
 
 .imageGoesHere {
@@ -94,12 +103,13 @@ main {
 }
 
 .statFour {
-    color: yellow;
     z-index: 2;
     overflow: auto;
     background-color: rgba(0,0,0,0.3);
+    padding: 4px;
+    text-shadow: 0 0 3px rgba(63,255,240,0.3);
+    height: 111px;
 }
-
 
 /* ANIMATIONS */
 
@@ -122,6 +132,9 @@ main {
     background-position: top;
     background-size: 170px;
     background-repeat: no-repeat;
+    animation-name: hover;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
 }
 
 @keyframes bounce {
@@ -131,7 +144,9 @@ main {
 }
 
 @keyframes hover {
-
+    0% {top: 0px;}
+    50% {top:-20px;}
+    100% {top: 0px}
 }
 
 /* 
@@ -139,3 +154,22 @@ Light cyan      #3ffff0
 Darker cyan     #00dfff
 Dark cyan       #006bff
 */
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: rgba(0,0,0,0.3); 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: rgba(0,223,255,1); 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(0,223,255,1); 
