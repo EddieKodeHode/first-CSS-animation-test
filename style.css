@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    border: red solid 1px;
 }
 
 body {
@@ -17,6 +18,32 @@ main {
     height: 400px;
     background-color: rgba(0,0,10,0.7);
     border: 2px solid white;
+    display: flex;
+}
+
+.leftBox {
+    width: 62%;
+}
+
+.topContainer {
+    height: 15%;
+}
+
+.bottomContainer {
+    height: 85%;
+    display: flex;
+}
+
+.containerContent {
+    color: yellow;
+    height: 100%;
+    width: 50%;
+    overflow: auto;
+}
+
+
+.rightBox {
+    width: 38%;
 }
 
 
