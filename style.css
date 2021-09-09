@@ -1,0 +1,13 @@
+body {
+    background: rgb(63,255,240);
+    background: linear-gradient(180deg, rgba(63,255,240,1) 0%, rgba(63,255,240,1) 60%, rgba(0,223,255,1) 75%, rgba(0,107,255,1) 100%);
+}
+
+
+
+
+/* 
+Light cyan      #3ffff0
+Darker cyan     #00dfff
+Dark cyan       #006bff
+*/
