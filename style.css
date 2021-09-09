@@ -1,9 +1,12 @@
-
+* {
+    margin: 0;
+    padding: 0;
+}
 
 body {
     background: linear-gradient(180deg, rgba(63,255,240,1) 0%, rgba(63,255,240,1) 60%, rgba(0,223,255,1) 75%, rgba(0,107,255,1) 100%);
-    height: 97vh;
-    width: 97vw;
+    height: 100vh;
+    width: 100vw;
     display: flex;
     justify-content: center;
     align-items: center;
